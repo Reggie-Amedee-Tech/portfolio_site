@@ -15,28 +15,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
-
-const CONTACTS = [
-  {
-    label: "Email",
-    value: "jeantechnical1992@gmail.com",
-    action: "Copy",
-    href: null as string | null,
-  },
-  {
-    label: "LinkedIn",
-    value: "/in/reginaldamedee",
-    action: "Open ↗",
-    href: "https://linkedin.com/in/reginaldamedee",
-  },
-  {
-    label: "GitHub",
-    value: "Reggie-Amedee-Tech",
-    sub: "Most production work lives in private repos",
-    action: "Open ↗",
-    href: "https://github.com/Reggie-Amedee-Tech",
-  },
-];
+import { CONTACTS } from "./constants";
 
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
