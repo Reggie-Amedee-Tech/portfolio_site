@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import { Toaster } from "sonner";
 import { Nav } from "@/components/shared";
+import { SITE_URL } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
@@ -19,6 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "R.J. Amedee — Full-Stack Engineer",
   description:
     "TypeScript, Python, Next.js. Full-stack engineer shipping features that move revenue.",
@@ -27,8 +29,12 @@ export const metadata: Metadata = {
     description:
       "TypeScript, Python, Next.js. Full-stack engineer shipping features that move revenue.",
     images: [
-      { url: "/rj-amedee.jpg", width: 1024, height: 1024, alt: "R.J. Amedee" },
+      { url: "/og.jpg", width: 1200, height: 630, alt: "R.J. Amedee" },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og.jpg"],
   },
 };
 

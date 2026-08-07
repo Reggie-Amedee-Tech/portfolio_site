@@ -35,7 +35,7 @@ export function ContactChannels() {
               <P className="text-sm font-medium text-foreground break-all">
                 {c.value}
               </P>
-              {"sub" in c && c.sub && (
+              {c.sub && (
                 <Small className="text-foreground/40 mt-0.5 block text-[9px] normal-case tracking-normal">
                   {c.sub}
                 </Small>

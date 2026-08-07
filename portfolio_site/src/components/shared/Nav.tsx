@@ -19,10 +19,11 @@ export function Nav() {
       if (e.key === "Escape") setOpen(false);
     };
     document.addEventListener("keydown", onKey);
+    const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
       document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = "";
+      document.body.style.overflow = previousOverflow;
     };
   }, [open]);
 
@@ -112,11 +113,11 @@ export function Nav() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-border bg-background">
+        <div className="md:hidden border-t border-border bg-background max-h-[calc(100vh-3.5rem)] overflow-y-auto">
           <nav className="mx-auto max-w-[1280px] page-x py-4 flex flex-col gap-1">
             {NAV_LINKS.map(({ href, label }) => {
               const isActive =
-                href === "/" ? pathname === "/" : pathname.startsWith(href);
+                pathname === href || pathname.startsWith(`${href}/`);
               return (
                 <Link
                   key={href}
