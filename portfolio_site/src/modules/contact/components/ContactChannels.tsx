@@ -1,19 +1,32 @@
 "use client";
 
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { P, Small } from "@/components/ui/typography";
+import { Button, Card, CardContent, P, Small } from "@/components/ui";
+import { useEffect, useRef, useState } from "react";
 import { CONTACT_EMAIL, CONTACTS, COPY_EMAIL_TIMEOUT_MS } from "../constants";
 
 export function ContactChannels() {
   const [copied, setCopied] = useState(false);
+  const copyTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (copyTimeoutRef.current !== null) {
+        clearTimeout(copyTimeoutRef.current);
+      }
+    };
+  }, []);
 
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText(CONTACT_EMAIL);
+      if (copyTimeoutRef.current !== null) {
+        clearTimeout(copyTimeoutRef.current);
+      }
       setCopied(true);
-      setTimeout(() => setCopied(false), COPY_EMAIL_TIMEOUT_MS);
+      copyTimeoutRef.current = setTimeout(() => {
+        setCopied(false);
+        copyTimeoutRef.current = null;
+      }, COPY_EMAIL_TIMEOUT_MS);
     } catch {
       setCopied(false);
     }

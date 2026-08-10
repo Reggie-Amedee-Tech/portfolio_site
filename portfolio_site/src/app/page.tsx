@@ -1,5 +1,10 @@
+import { Suspense } from "react";
 import { WorkScreen } from "@/modules/work/screens";
 
 export default function Page() {
-  return <WorkScreen />;
+  return (
+    <Suspense>
+      <WorkScreen />
+    </Suspense>
+  );
 }

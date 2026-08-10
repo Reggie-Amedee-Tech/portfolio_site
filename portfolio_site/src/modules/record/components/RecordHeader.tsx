@@ -1,6 +1,5 @@
+import { Button, H1, Small } from "@/components/ui";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { H1, Small } from "@/components/ui/typography";
 import { RECORD_VIEW_FILTERS } from "../constants";
 
 export function RecordHeader() {

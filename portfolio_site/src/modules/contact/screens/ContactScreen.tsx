@@ -1,7 +1,6 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
-import { Small } from "@/components/ui/typography";
+import { Badge, Small } from "@/components/ui";
 import {
   ContactAvailability,
   ContactChannels,

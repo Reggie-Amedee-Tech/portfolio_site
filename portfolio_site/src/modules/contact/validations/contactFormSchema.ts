@@ -8,6 +8,7 @@ export const contactFormSchema = yup.object({
     .email("Enter a valid email")
     .required("Email is required"),
   role: yup.string().trim().required("Tell me a bit about the role"),
+  botcheck: yup.string().default(""),
 });
 
 export type ContactFormValues = yup.InferType<typeof contactFormSchema>;

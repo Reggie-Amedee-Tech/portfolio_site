@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { Toaster } from "sonner";
 import { Nav } from "@/components/shared";
 import { SITE_URL } from "@/lib/site";
@@ -28,9 +29,7 @@ export const metadata: Metadata = {
     title: "R.J. Amedee — Full-Stack Engineer",
     description:
       "TypeScript, Python, Next.js. Full-stack engineer shipping features that move revenue.",
-    images: [
-      { url: "/og.jpg", width: 1200, height: 630, alt: "R.J. Amedee" },
-    ],
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "R.J. Amedee" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -53,9 +52,11 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        <Nav />
-        {children}
-        <Toaster theme="dark" position="bottom-right" richColors />
+        <NuqsAdapter>
+          <Nav />
+          {children}
+          <Toaster theme="dark" position="bottom-right" richColors />
+        </NuqsAdapter>
       </body>
     </html>
   );

@@ -1,4 +1,4 @@
-import { Small } from "@/components/ui/typography";
+import { Small } from "@/components/ui";
 
 export function ContactAvailability() {
   return (

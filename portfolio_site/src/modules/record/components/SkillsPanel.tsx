@@ -1,13 +1,12 @@
-import { Badge } from "@/components/ui/badge";
-import { Small } from "@/components/ui/typography";
+import { Badge, H2, Small } from "@/components/ui";
 import { SKILLS } from "../constants";
 
 export function SkillsPanel() {
   return (
-    <div>
-      <Small className="text-foreground/40 mb-6 block">
+    <section>
+      <H2 className="font-mono text-[10px] uppercase tracking-widest text-foreground/40 mb-6 font-normal">
         Skills &amp; Technologies
-      </Small>
+      </H2>
       <div className="space-y-4">
         {Object.entries(SKILLS).map(([cat, tags]) => (
           <div
@@ -29,6 +28,6 @@ export function SkillsPanel() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

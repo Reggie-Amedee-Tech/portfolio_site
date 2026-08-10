@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { Separator } from "@/components/ui";
+import { parseAsStringLiteral, useQueryState } from "nuqs";
 import { SiteCtaFooter } from "@/components/shared";
-import { Separator } from "@/components/ui/separator";
 import {
   ImpactCard,
   ProjectCard,
@@ -10,10 +10,14 @@ import {
   TechTagsBar,
   WorkHero,
 } from "../components";
-import { PROJECTS, type ProjectFilter } from "../constants";
+import { FILTERS, PROJECTS, type ProjectFilter } from "../constants";
+
+const filterParser = parseAsStringLiteral(
+  FILTERS.map((f) => f.value) as [ProjectFilter, ...ProjectFilter[]],
+).withDefault("all");
 
 export function WorkScreen() {
-  const [filter, setFilter] = useState<ProjectFilter>("all");
+  const [filter, setFilter] = useQueryState("filter", filterParser);
 
   const visible =
     filter === "all" ? PROJECTS : PROJECTS.filter((p) => p.filter === filter);

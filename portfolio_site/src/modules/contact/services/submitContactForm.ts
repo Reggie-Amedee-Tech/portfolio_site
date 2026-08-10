@@ -31,7 +31,7 @@ export async function submitContactForm(
       message: values.role,
       subject: `Portfolio contact — ${values.name}`,
       from_name: "Portfolio Contact",
-      botcheck: false,
+      botcheck: values.botcheck ?? "",
     }),
   });
 

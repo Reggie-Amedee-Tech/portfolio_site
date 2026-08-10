@@ -19,6 +19,6 @@ export const SECTIONS = [
   {
     num: "03",
     label: "What I'm Learning",
-    body: "Production engineering fundamentals from the MLH/Meta fellowship and data science through The Knowledge House.",
+    body: "Data science through The Knowledge House and data engineering through IBM.",
   },
 ];

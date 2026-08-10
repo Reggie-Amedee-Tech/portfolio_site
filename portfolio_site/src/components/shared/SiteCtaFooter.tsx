@@ -1,6 +1,5 @@
+import { buttonVariants, H2, P } from "@/components/ui";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
-import { H2, P } from "@/components/ui/typography";
 import { cn } from "@/lib/utils";
 
 type SiteCtaFooterProps = {

@@ -1,6 +1,5 @@
+import { buttonVariants, H1, P } from "@/components/ui";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
-import { H1, P } from "@/components/ui/typography";
 import { cn } from "@/lib/utils";
 
 export function AboutHero() {

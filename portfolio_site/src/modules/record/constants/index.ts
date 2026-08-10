@@ -10,7 +10,7 @@ export const JOBS = [
     dates: "Feb 2025 – Present",
     location: "Remote",
     outcome: "$100K",
-    outcomeCyan: true,
+    isHeadline: true,
     bullets: [
       "Developed and implemented UI in Next.js using TypeScript components based on Figma wireframes, improving website engagement by 40% through data-driven UX optimizations.",
       "Architected and led the delivery of custom product features by performing rigorous requirement analysis, directly increasing platform retention and adoption across high-value enterprise accounts.",
@@ -23,7 +23,7 @@ export const JOBS = [
     dates: "Sep 2024 – Present",
     location: "Remote",
     outcome: "SCALE",
-    outcomeCyan: true,
+    isHeadline: true,
     bullets: [
       "Architected robust data models using Prisma ORM and PostgreSQL, tailoring schema designs to meet diverse client use cases and ensure data integrity.",
       "Engineered end-to-end features, developing scalable backend services and responsive front-end components to fulfill all defined user stories.",
@@ -38,7 +38,7 @@ export const JOBS = [
     dates: "May 2024 – Aug 2024",
     location: "Remote",
     outcome: "+34%",
-    outcomeCyan: true,
+    isHeadline: true,
     bullets: [
       "Revamped front-end application written in Next.js to meet marketing campaign needs using Figma specs, resulting in a 34% surge in sign-up rates.",
       "Resolved critical bugs throughout the application and added new features and Firebase integrations to the NestJS backend, leading to a notable uptick in feature integrations.",
@@ -51,7 +51,7 @@ export const JOBS = [
     dates: "Feb 2023 – Jun 2023",
     location: "Remote",
     outcome: "$10K+",
-    outcomeCyan: false,
+    isHeadline: false,
     bullets: [
       "Spearheaded the development of a newsletter generator application, achieving annual cost savings of over $10,000.",
       "Managed the entire product development lifecycle, ensuring seamless execution of deadlines and key milestones.",
@@ -64,7 +64,7 @@ export const JOBS = [
     dates: "Jul 2019 – Jun 2022",
     location: "New York City",
     outcome: "$1M+",
-    outcomeCyan: false,
+    isHeadline: false,
     bullets: [
       "Strategically recommended brand products based on historical usage data, effectively showcasing ROI and overcoming objections to drive over $1,000,000 in upsell revenue.",
       "Performed deep-dive analysis on account data, including usage trends, sales metrics, and client feedback, to optimize account health and align technical solutions with customer needs.",

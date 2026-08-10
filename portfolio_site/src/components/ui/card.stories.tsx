@@ -1,4 +1,3 @@
-import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import {
   Card,
   CardAction,
@@ -7,8 +6,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+  Button,
+} from "@/components/ui";
+import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
 const meta = {
   title: "UI/Card",

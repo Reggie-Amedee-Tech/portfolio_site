@@ -1,7 +1,5 @@
+import { Badge, buttonVariants, H1, Lead } from "@/components/ui";
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
-import { buttonVariants } from "@/components/ui/button";
-import { H1, Lead } from "@/components/ui/typography";
 import { cn } from "@/lib/utils";
 import { CHIP_CLASS, HERO_TAGS } from "../constants";
 

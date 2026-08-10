@@ -1,12 +1,12 @@
-import { H4, Small } from "@/components/ui/typography";
+import { H2, H4, Small } from "@/components/ui";
 import { EDUCATION } from "../constants";
 
 export function EducationPanel() {
   return (
-    <div>
-      <Small className="text-foreground/40 mb-6 block">
+    <section>
+      <H2 className="font-mono text-[10px] uppercase tracking-widest text-foreground/40 mb-6 font-normal">
         Education &amp; Collaborators
-      </Small>
+      </H2>
       <div className="space-y-4">
         {EDUCATION.map((e) => (
           <div
@@ -25,6 +25,6 @@ export function EducationPanel() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,4 +1,4 @@
-import { H1, Lead } from "@/components/ui/typography";
+import { H1, Lead } from "@/components/ui";
 
 export function ContactHero() {
   return (

@@ -6,12 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "eslint --max-warnings 0",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "typecheck": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "cd .. && husky"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
@@ -20,6 +21,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^1.28.0",
     "next": "16.3.0",
+    "nuqs": "^2.9.5",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "react-hook-form": "^7.84.0",
@@ -41,10 +43,21 @@
     "eslint-config-next": "16.3.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-storybook": "^10.5.6",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
     "prettier": "^3.9.6",
     "storybook": "^10.5.6",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vite": "^8.2.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "eslint --max-warnings 0 --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,yml,yaml}": [
+      "prettier --write"
+    ]
   }
 }

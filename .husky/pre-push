@@ -1,0 +1,1 @@
+cd portfolio_site && npm run typecheck && npm run build

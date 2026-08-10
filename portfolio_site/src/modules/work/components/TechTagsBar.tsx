@@ -1,4 +1,4 @@
-import { Small } from "@/components/ui/typography";
+import { Small } from "@/components/ui";
 import { TECH_TAGS } from "../constants";
 
 export function TechTagsBar() {

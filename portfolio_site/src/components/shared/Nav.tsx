@@ -1,10 +1,9 @@
 "use client";
 
+import { Button, buttonVariants, P } from "@/components/ui";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { P } from "@/components/ui/typography";
 import { NAV_LINKS } from "@/components/shared/constants";
 import { RESUME_DOWNLOAD_NAME, RESUME_HREF } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -48,7 +47,7 @@ export function Nav() {
         <nav className="hidden md:flex items-center gap-7 flex-1 justify-center">
           {NAV_LINKS.map(({ href, label }) => {
             const isActive =
-              href === "/" ? pathname === "/" : pathname.startsWith(href);
+              pathname === href || pathname.startsWith(`${href}/`);
             return (
               <Link
                 key={href}

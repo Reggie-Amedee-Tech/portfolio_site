@@ -1,13 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
 import {
+  Badge,
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/components/ui";
+import Image from "next/image";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { CHIP_CLASS, type Project } from "../constants";
 

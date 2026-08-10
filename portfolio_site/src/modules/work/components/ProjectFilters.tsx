@@ -1,11 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { Small } from "@/components/ui/typography";
+import { Button, H2 } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { FILTERS, type ProjectFilter } from "../constants";
 
 type ProjectFiltersProps = {
   filter: ProjectFilter;
-  onFilterChange: (value: ProjectFilter) => void;
+  onFilterChange: (value: ProjectFilter) => void | Promise<URLSearchParams>;
 };
 
 export function ProjectFilters({
@@ -14,7 +13,9 @@ export function ProjectFilters({
 }: ProjectFiltersProps) {
   return (
     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-8">
-      <Small>Selected Work</Small>
+      <H2 className="font-mono text-[10px] uppercase tracking-widest text-foreground/50 font-normal">
+        Selected Work
+      </H2>
       <div className="flex items-center gap-1 flex-wrap">
         {FILTERS.map((f) => (
           <Button

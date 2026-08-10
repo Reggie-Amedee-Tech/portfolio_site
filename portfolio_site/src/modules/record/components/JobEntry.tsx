@@ -1,5 +1,4 @@
-import { Badge } from "@/components/ui/badge";
-import { H3, Muted, Small } from "@/components/ui/typography";
+import { Badge, H3, Muted, Small } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { CHIP_CLASS, type Job } from "../constants";
 
@@ -21,7 +20,7 @@ export function JobEntry({ job, index }: JobEntryProps) {
             <Badge
               className={cn(
                 CHIP_CLASS,
-                job.outcomeCyan
+                job.isHeadline
                   ? "bg-primary text-primary-foreground"
                   : "bg-muted text-foreground",
               )}
@@ -42,8 +41,11 @@ export function JobEntry({ job, index }: JobEntryProps) {
       </div>
 
       <ul className="space-y-2 pl-0 sm:pl-8">
-        {job.bullets.map((b) => (
-          <li key={b} className="flex items-start gap-3">
+        {job.bullets.map((b, bulletIndex) => (
+          <li
+            key={`${job.company}-${job.dates}-bullet-${bulletIndex}`}
+            className="flex items-start gap-3"
+          >
             <span className="mt-2 w-1 h-1 rounded-full shrink-0 bg-primary" />
             <Muted className="leading-relaxed">{b}</Muted>
           </li>

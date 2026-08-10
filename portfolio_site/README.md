@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio site
 
-## Getting Started
+Next.js App Router portfolio under `portfolio_site/`.
 
-First, run the development server:
+## Getting started
 
 ```bash
+cd portfolio_site
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Script                                  | Purpose                |
+| --------------------------------------- | ---------------------- |
+| `npm run dev`                           | Dev server             |
+| `npm run build`                         | Production build       |
+| `npm run lint`                          | ESLint (warnings fail) |
+| `npm run format:check` / `format:write` | Prettier               |
+| `npm run typecheck`                     | `tsc --noEmit`         |
+| `npm run storybook`                     | Component stories      |
 
-## Learn More
+## Contact form
 
-To learn more about Next.js, take a look at the following resources:
+Set `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` in `portfolio_site/.env.local` (see `.env.example` if present).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Troubleshooting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+After moving app directories (for example `app/` → `src/app/`), clear the Next build cache before trusting typecheck failures:
 
-## Deploy on Vercel
+```bash
+rm -rf .next
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`tsconfig.json` includes `.next/types/**/*.ts`. Stale validator types from the old layout can report missing modules that no longer exist until the cache is cleared.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Git hooks
+
+Husky lives at the repo root. From `portfolio_site/`:
+
+- **pre-commit** — `lint-staged` (eslint + prettier on changed files)
+- **pre-push** — `typecheck` + `build`
+
+Hooks are a convenience, not enforcement. CI runs the same quality gates on every PR.

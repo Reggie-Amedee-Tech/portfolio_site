@@ -1,7 +1,6 @@
+import { Separator, Small } from "@/components/ui";
 import Image from "next/image";
 import { SiteCtaFooter } from "@/components/shared";
-import { Separator } from "@/components/ui/separator";
-import { Small } from "@/components/ui/typography";
 import { AboutHero, AboutSections, AtAGlanceCard } from "../components";
 
 export function AboutScreen() {

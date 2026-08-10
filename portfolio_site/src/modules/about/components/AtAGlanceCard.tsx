@@ -1,19 +1,19 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
-} from "@/components/ui/card";
-import { Small } from "@/components/ui/typography";
+  CardTitle,
+  Small,
+} from "@/components/ui";
 import { AT_A_GLANCE } from "../constants";
 
 export function AtAGlanceCard() {
   return (
     <Card className="rounded gap-0 py-0 ring-border">
       <CardHeader className="px-5 pt-5 pb-0">
-        <CardDescription className="font-mono text-[10px] uppercase tracking-widest text-foreground/40">
+        <CardTitle className="font-mono text-[10px] uppercase tracking-widest text-foreground/40 font-normal">
           At a Glance
-        </CardDescription>
+        </CardTitle>
       </CardHeader>
       <CardContent className="px-5 py-4 space-y-3">
         {AT_A_GLANCE.map(({ label, value }) => (
