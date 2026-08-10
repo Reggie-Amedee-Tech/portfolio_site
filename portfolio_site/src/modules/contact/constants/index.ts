@@ -1,7 +1,6 @@
 import type { ContactMethod } from "../types";
 
 export const COPY_EMAIL_TIMEOUT_MS = 2000;
-export const FORM_SUCCESS_TIMEOUT_MS = 3000;
 
 export const CONTACT_EMAIL = "jeantechnical1992@gmail.com";
 

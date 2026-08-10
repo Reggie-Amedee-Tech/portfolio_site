@@ -16,7 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { P } from "@/components/ui/typography";
-import { FORM_SUCCESS_TIMEOUT_MS } from "../constants";
+import { submitContactForm } from "../services";
 import { contactFormSchema, type ContactFormValues } from "../validations";
 
 export function ContactForm() {
@@ -30,12 +30,9 @@ export function ContactForm() {
     defaultValues: { name: "", email: "", role: "" },
   });
 
-  const onSubmit = async () => {
+  const onSubmit = async (values: ContactFormValues) => {
     try {
-      // Mock submit — no API yet. Brief delay so isSubmitting is visible.
-      await new Promise((resolve) =>
-        setTimeout(resolve, FORM_SUCCESS_TIMEOUT_MS / 6),
-      );
+      await submitContactForm(values);
       toast.success("Sent — I'll reply within a day.");
       reset();
     } catch {
