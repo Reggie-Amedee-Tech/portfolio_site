@@ -8,7 +8,7 @@ const meta = {
   args: {
     children: "Name",
     className:
-      "font-mono text-[9px] uppercase tracking-widest text-foreground/50",
+      "font-mono text-[9px] uppercase tracking-widest text-foreground/60",
   },
 } satisfies Meta<typeof Label>;
 

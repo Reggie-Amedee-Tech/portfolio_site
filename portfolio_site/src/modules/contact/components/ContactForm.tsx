@@ -55,11 +55,11 @@ export function ContactForm() {
           <CardTitle className="font-semibold text-base text-foreground">
             Send a note
           </CardTitle>
-          <span className="font-mono text-[9px] uppercase tracking-widest text-foreground/40 shrink-0">
+          <span className="font-mono text-[9px] uppercase tracking-widest text-foreground/60 shrink-0">
             Optional
           </span>
         </div>
-        <CardDescription className="font-mono text-[10px] text-foreground/40">
+        <CardDescription className="font-mono text-[10px] text-foreground/60">
           Three fields. Nothing gated behind it.
         </CardDescription>
       </CardHeader>
@@ -90,7 +90,7 @@ export function ContactForm() {
           <div className="space-y-1.5">
             <Label
               htmlFor={FIELD_IDS.name}
-              className="font-mono text-[9px] uppercase tracking-widest text-foreground/50"
+              className="font-mono text-[9px] uppercase tracking-widest text-foreground/60"
             >
               Name
             </Label>
@@ -109,7 +109,7 @@ export function ContactForm() {
               <P
                 id={`${FIELD_IDS.name}-error`}
                 role="alert"
-                className="text-xs text-destructive"
+                className="text-xs text-destructive-text"
               >
                 {errors.name.message}
               </P>
@@ -119,7 +119,7 @@ export function ContactForm() {
           <div className="space-y-1.5">
             <Label
               htmlFor={FIELD_IDS.email}
-              className="font-mono text-[9px] uppercase tracking-widest text-foreground/50"
+              className="font-mono text-[9px] uppercase tracking-widest text-foreground/60"
             >
               Email
             </Label>
@@ -138,7 +138,7 @@ export function ContactForm() {
               <P
                 id={`${FIELD_IDS.email}-error`}
                 role="alert"
-                className="text-xs text-destructive"
+                className="text-xs text-destructive-text"
               >
                 {errors.email.message}
               </P>
@@ -148,7 +148,7 @@ export function ContactForm() {
           <div className="space-y-1.5">
             <Label
               htmlFor={FIELD_IDS.role}
-              className="font-mono text-[9px] uppercase tracking-widest text-foreground/50"
+              className="font-mono text-[9px] uppercase tracking-widest text-foreground/60"
             >
               What&apos;s the Role?
             </Label>
@@ -167,7 +167,7 @@ export function ContactForm() {
               <P
                 id={`${FIELD_IDS.role}-error`}
                 role="alert"
-                className="text-xs text-destructive"
+                className="text-xs text-destructive-text"
               >
                 {errors.role.message}
               </P>
@@ -185,7 +185,7 @@ export function ContactForm() {
         </form>
       </CardContent>
       <CardFooter className="flex-col items-stretch border-t border-border bg-transparent px-4 sm:px-6 py-5">
-        <P className="font-mono text-[10px] uppercase tracking-widest text-foreground/40 mb-3">
+        <P className="font-mono text-[10px] uppercase tracking-widest text-foreground/60 mb-3">
           Or Skip the Form
         </P>
         <P className="text-sm">

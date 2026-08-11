@@ -7,10 +7,10 @@ export function ContactAvailability() {
         <span className="w-1.5 h-1.5 rounded-full bg-primary" />
         Available Now — Full-Time
       </span>
-      <span className="text-foreground/30">·</span>
-      <Small className="text-foreground/50">New York · UTC-5</Small>
-      <span className="text-foreground/30">·</span>
-      <Small className="text-foreground/50">Replies Within 24H</Small>
+      <span className="text-foreground/40">·</span>
+      <Small className="text-foreground/60">New York · UTC-5</Small>
+      <span className="text-foreground/40">·</span>
+      <Small className="text-foreground/60">Replies Within 24H</Small>
     </div>
   );
 }

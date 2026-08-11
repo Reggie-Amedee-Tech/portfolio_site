@@ -1,10 +1,9 @@
 export const CHIP_CLASS =
   "h-auto rounded-[2px] px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-widest font-semibold";
 
-export const RECORD_VIEW_FILTERS = ["All", "Description", "Dates"] as const;
-
 export const JOBS = [
   {
+    id: "goodcall",
     company: "Goodcall Technology",
     role: "Software Engineer (Contract)",
     dates: "Feb 2025 – Present",
@@ -18,6 +17,7 @@ export const JOBS = [
     ],
   },
   {
+    id: "webuild",
     company: "WeBuild Solutions",
     role: "Software Engineer (Contract)",
     dates: "Sep 2024 – Present",
@@ -33,6 +33,7 @@ export const JOBS = [
     ],
   },
   {
+    id: "hitide",
     company: "HiTide Capital",
     role: "Software Engineer (Contract)",
     dates: "May 2024 – Aug 2024",
@@ -46,6 +47,7 @@ export const JOBS = [
     ],
   },
   {
+    id: "afreebird",
     company: "AFreeBird.org",
     role: "Software Engineer (Volunteer)",
     dates: "Feb 2023 – Jun 2023",
@@ -59,6 +61,7 @@ export const JOBS = [
     ],
   },
   {
+    id: "vimeo",
     company: "Vimeo",
     role: "Account Manager",
     dates: "Jul 2019 – Jun 2022",

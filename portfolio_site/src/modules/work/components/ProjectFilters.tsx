@@ -13,7 +13,7 @@ export function ProjectFilters({
 }: ProjectFiltersProps) {
   return (
     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-8">
-      <H2 className="font-mono text-[10px] uppercase tracking-widest text-foreground/50 font-normal">
+      <H2 className="font-mono text-[10px] uppercase tracking-widest text-foreground/60 font-normal">
         Selected Work
       </H2>
       <div className="flex items-center gap-1 flex-wrap">
@@ -25,10 +25,10 @@ export function ProjectFilters({
             size="sm"
             onClick={() => onFilterChange(f.value)}
             className={cn(
-              "font-mono text-[10px] uppercase tracking-widest rounded-[3px]",
+              "font-mono text-[10px] uppercase tracking-widest rounded-[3px] transition-colors",
               filter === f.value
                 ? "bg-muted text-foreground"
-                : "text-foreground/40",
+                : "text-foreground/60",
             )}
           >
             {f.label}

@@ -16,7 +16,7 @@ export function RecordScreen() {
 
         <div>
           {JOBS.map((job, i) => (
-            <div key={`${job.company}-${job.role}-${job.dates}`}>
+            <div key={job.id}>
               <JobEntry job={job} index={i} />
               {i < JOBS.length - 1 && <Separator />}
             </div>

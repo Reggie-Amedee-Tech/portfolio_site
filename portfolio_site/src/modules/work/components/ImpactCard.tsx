@@ -13,10 +13,10 @@ export function ImpactCard() {
     <Card className="rounded gap-0 py-0 ring-border">
       <CardHeader className="border-b border-border px-4 sm:px-6 py-4">
         <div className="flex justify-between items-center gap-3">
-          <CardTitle className="font-mono text-[10px] uppercase tracking-widest text-foreground/50 font-normal">
+          <CardTitle className="font-mono text-[10px] uppercase tracking-widest text-foreground/60 font-normal">
             Impact — Sourced
           </CardTitle>
-          <span className="font-mono text-[10px] uppercase tracking-widest text-foreground/40 shrink-0">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-foreground/60 shrink-0">
             Sources Below
           </span>
         </div>
@@ -37,7 +37,7 @@ export function ImpactCard() {
             </div>
             <div className="mt-1.5 flex items-start gap-2">
               <span className="inline-block w-3 h-px mt-2.5 shrink-0 bg-primary" />
-              <span className="font-mono text-[10px] text-foreground/40 tracking-wide leading-relaxed break-words">
+              <span className="font-mono text-[10px] text-foreground/60 tracking-wide leading-relaxed break-words">
                 {source}
               </span>
             </div>
@@ -53,7 +53,7 @@ export function ImpactCard() {
             height={20}
             className="mt-0.5 w-5 h-5 rounded-[2px] object-cover object-[50%_20%] shrink-0"
           />
-          <span className="font-mono text-[10px] text-foreground/40 leading-relaxed">
+          <span className="font-mono text-[10px] text-foreground/60 leading-relaxed">
             Currently apprenticing at{" "}
             <span className="text-foreground/60">718 Digital Labs</span>, The
             Knowledge House.

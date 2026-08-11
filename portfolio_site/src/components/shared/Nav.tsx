@@ -36,7 +36,7 @@ export function Nav() {
           className="flex items-center gap-2.5 shrink-0 min-w-0"
           onClick={closeMenu}
         >
-          <span className="w-7 h-7 flex items-center justify-center text-[10px] font-mono font-semibold tracking-widest bg-brand text-foreground rounded-[2px] shrink-0">
+          <span className="w-7 h-7 flex items-center justify-center text-[10px] font-mono font-semibold tracking-widest bg-destructive text-destructive-foreground rounded-[2px] shrink-0">
             RA
           </span>
           <span className="font-mono text-xs font-medium tracking-[0.18em] uppercase text-foreground truncate">
@@ -56,7 +56,7 @@ export function Nav() {
                   "font-mono text-xs uppercase tracking-widest transition-colors",
                   isActive
                     ? "text-foreground"
-                    : "text-foreground/50 hover:text-foreground",
+                    : "text-foreground/60 hover:text-foreground focus-visible:text-foreground",
                 )}
               >
                 {label}
@@ -84,7 +84,7 @@ export function Nav() {
             type="button"
             variant="ghost"
             size="icon"
-            className="md:hidden relative size-9 rounded-[3px] border border-border text-foreground/70 hover:text-foreground hover:bg-muted"
+            className="md:hidden relative size-9 rounded-[3px] border border-border text-foreground/70 hover:text-foreground hover:bg-muted focus-visible:text-foreground focus-visible:bg-muted"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -126,7 +126,7 @@ export function Nav() {
                     "font-mono text-sm uppercase tracking-widest py-3 border-b border-border last:border-0 transition-colors",
                     isActive
                       ? "text-foreground"
-                      : "text-foreground/50 hover:text-foreground",
+                      : "text-foreground/60 hover:text-foreground focus-visible:text-foreground",
                   )}
                 >
                   {label}

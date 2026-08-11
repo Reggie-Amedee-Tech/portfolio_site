@@ -15,7 +15,7 @@ export const CONTACTS: ContactMethod[] = [
     label: "LinkedIn",
     value: "/in/reginaldamedee",
     action: "Open ↗",
-    href: "https://linkedin.com/in/reginaldamedee",
+    href: "https://www.linkedin.com/in/reginaldamedee/",
   },
   {
     label: "GitHub",

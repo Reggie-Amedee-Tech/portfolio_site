@@ -3,6 +3,11 @@ export const AT_A_GLANCE = [
   { label: "Seeking", value: "Full-time · available now" },
   { label: "Depth", value: "TypeScript · Python" },
   { label: "Now", value: "718 Digital Labs" },
+  {
+    label: "LinkedIn",
+    value: "/in/reginaldamedee",
+    href: "https://www.linkedin.com/in/reginaldamedee/",
+  },
 ];
 
 export const SECTIONS = [

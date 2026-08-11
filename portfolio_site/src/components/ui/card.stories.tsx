@@ -51,10 +51,10 @@ export const ImpactPanel: Story = {
     <Card className="w-[420px] rounded gap-0 py-0 ring-border">
       <CardHeader className="border-b border-border px-6 py-4">
         <div className="flex justify-between items-center">
-          <CardDescription className="font-mono text-[10px] uppercase tracking-widest text-foreground/50">
+          <CardDescription className="font-mono text-[10px] uppercase tracking-widest text-foreground/60">
             Impact — Sourced
           </CardDescription>
-          <span className="font-mono text-[10px] uppercase tracking-widest text-foreground/40">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-foreground/60">
             Sources Below
           </span>
         </div>
@@ -69,14 +69,14 @@ export const ImpactPanel: Story = {
           </div>
           <div className="mt-1.5 flex items-start gap-2">
             <span className="inline-block w-3 h-px mt-2.5 shrink-0 bg-primary" />
-            <span className="font-mono text-[10px] text-foreground/40 tracking-wide">
+            <span className="font-mono text-[10px] text-foreground/60 tracking-wide">
               Goodcall — raised enterprise contracts, 100+ ↗ carriers
             </span>
           </div>
         </div>
       </CardContent>
       <CardFooter className="border-t border-border bg-transparent px-6 py-4">
-        <span className="font-mono text-[10px] text-foreground/40">
+        <span className="font-mono text-[10px] text-foreground/60">
           Currently apprenticing at 718 Digital Labs
         </span>
       </CardFooter>
@@ -110,7 +110,7 @@ export const Small: Story = {
     <Card className="w-[320px] rounded ring-border" size="sm">
       <CardContent className="px-4 py-3 flex items-start justify-between gap-4">
         <div>
-          <p className="font-mono text-[9px] uppercase tracking-widest text-foreground/40 mb-0.5">
+          <p className="font-mono text-[9px] uppercase tracking-widest text-foreground/60 mb-0.5">
             Email
           </p>
           <p className="text-sm font-medium">jeantechnical1992@gmail.com</p>

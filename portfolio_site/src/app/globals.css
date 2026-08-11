@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
@@ -112,19 +111,24 @@
   }
 }
 
-.stripe-bg {
-  background: repeating-linear-gradient(
-    -45deg,
-    #383d41,
-    #383d41 1px,
-    #41474b 1px,
-    #41474b 12px
-  );
+@keyframes tag-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Shared horizontal page gutter — tighter on phones, full on desktop */
 @layer utilities {
   .page-x {
     @apply px-5 sm:px-8 lg:px-[44px];
+  }
+
+  .animate-tag-fade-in {
+    animation: tag-fade-in 120ms ease-out both;
   }
 }

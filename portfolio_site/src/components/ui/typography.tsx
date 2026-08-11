@@ -5,7 +5,7 @@ function H1({ className, ...props }: React.ComponentProps<"h1">) {
   return (
     <h1
       className={cn(
-        "text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight",
+        "font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight",
         className,
       )}
       {...props}
@@ -16,7 +16,10 @@ function H1({ className, ...props }: React.ComponentProps<"h1">) {
 function H2({ className, ...props }: React.ComponentProps<"h2">) {
   return (
     <h2
-      className={cn("text-xl sm:text-2xl font-bold tracking-tight", className)}
+      className={cn(
+        "font-heading text-xl sm:text-2xl font-bold tracking-tight",
+        className,
+      )}
       {...props}
     />
   );
@@ -26,7 +29,7 @@ function H3({ className, ...props }: React.ComponentProps<"h3">) {
   return (
     <h3
       className={cn(
-        "font-semibold text-base sm:text-lg text-foreground",
+        "font-heading font-semibold text-base sm:text-lg text-foreground",
         className,
       )}
       {...props}
@@ -37,7 +40,10 @@ function H3({ className, ...props }: React.ComponentProps<"h3">) {
 function H4({ className, ...props }: React.ComponentProps<"h4">) {
   return (
     <h4
-      className={cn("text-sm font-medium text-foreground", className)}
+      className={cn(
+        "font-heading text-sm font-medium text-foreground",
+        className,
+      )}
       {...props}
     />
   );
@@ -68,7 +74,7 @@ function Small({ className, ...props }: React.ComponentProps<"span">) {
   return (
     <span
       className={cn(
-        "font-mono text-[10px] uppercase tracking-widest text-foreground/50",
+        "font-mono text-[10px] uppercase tracking-widest text-foreground/60",
         className,
       )}
       {...props}

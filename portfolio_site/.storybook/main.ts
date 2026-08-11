@@ -5,7 +5,11 @@ const config: StorybookConfig = {
     "../src/components/**/*.stories.@(js|jsx|mjs|ts|tsx)",
     "../stories/**/*.mdx",
   ],
-  addons: ["@storybook/addon-a11y", "@storybook/addon-docs"],
+  addons: [
+    "@storybook/addon-a11y",
+    "@storybook/addon-docs",
+    "@storybook/addon-vitest",
+  ],
   framework: "@storybook/nextjs-vite",
   staticDirs: ["../public"],
 };

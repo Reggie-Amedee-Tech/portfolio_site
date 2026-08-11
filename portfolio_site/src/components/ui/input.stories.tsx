@@ -42,10 +42,13 @@ export const Disabled: Story = {
 export const WithLabel: Story = {
   render: (args) => (
     <div className="w-72 space-y-1.5">
-      <Label className="font-mono text-[9px] uppercase tracking-widest text-foreground/50">
+      <Label
+        htmlFor="story-input-name"
+        className="font-mono text-[9px] uppercase tracking-widest text-foreground/60"
+      >
         Name
       </Label>
-      <Input {...args} />
+      <Input {...args} id="story-input-name" />
     </div>
   ),
 };

@@ -4,7 +4,7 @@ import { EDUCATION } from "../constants";
 export function EducationPanel() {
   return (
     <section>
-      <H2 className="font-mono text-[10px] uppercase tracking-widest text-foreground/40 mb-6 font-normal">
+      <H2 className="font-mono text-[10px] uppercase tracking-widest text-foreground/60 mb-6 font-normal">
         Education &amp; Collaborators
       </H2>
       <div className="space-y-4">
@@ -15,11 +15,11 @@ export function EducationPanel() {
           >
             <div className="min-w-0">
               <H4>{e.name}</H4>
-              <Small className="text-foreground/40 mt-0.5 block">
+              <Small className="text-foreground/60 mt-0.5 block">
                 {e.role}
               </Small>
             </div>
-            <Small className="text-foreground/40 shrink-0 normal-case tracking-normal">
+            <Small className="text-foreground/60 shrink-0 normal-case tracking-normal">
               {e.dates}
             </Small>
           </div>

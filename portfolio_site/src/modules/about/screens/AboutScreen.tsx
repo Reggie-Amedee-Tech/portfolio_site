@@ -9,8 +9,8 @@ export function AboutScreen() {
       <div className="mx-auto max-w-[1280px] page-x pt-8">
         <div className="flex items-center gap-2 mb-6">
           <Small className="text-primary">About</Small>
-          <Small className="text-foreground/40">→</Small>
-          <Small className="text-foreground/40">File 000</Small>
+          <Small className="text-foreground/60">→</Small>
+          <Small className="text-foreground/60">File 000</Small>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 mb-12 sm:mb-16">
