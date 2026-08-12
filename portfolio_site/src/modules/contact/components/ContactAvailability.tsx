@@ -1,0 +1,16 @@
+import { Small } from "@/components/ui";
+
+export function ContactAvailability() {
+  return (
+    <div className="flex flex-wrap items-center gap-3 font-mono text-[10px] uppercase tracking-widest">
+      <span className="flex items-center gap-1.5 text-primary">
+        <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+        Available Now — Full-Time
+      </span>
+      <span className="text-foreground/40">·</span>
+      <Small className="text-foreground/60">New York · UTC-5</Small>
+      <span className="text-foreground/40">·</span>
+      <Small className="text-foreground/60">Replies Within 24H</Small>
+    </div>
+  );
+}

@@ -1,0 +1,7 @@
+.next
+node_modules
+storybook-static
+package-lock.json
+.debug-storybook.log
+debug-storybook.log
+.cursor
