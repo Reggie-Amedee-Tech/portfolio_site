@@ -37,6 +37,8 @@ export const metadata: Metadata = {
   },
 };
 
+console.log("SITE_URL", SITE_URL);
+
 export default function RootLayout({
   children,
 }: Readonly<{
