@@ -6,7 +6,7 @@ export const SITE_URL =
     : "http://localhost:3000");
 
 /** Stable public path for the résumé PDF. Overwrite the file on updates. */
-export const RESUME_HREF = "/resume.pdf";
+export const RESUME_HREF = "/reginald-jean-amedee-resume.pdf";
 
 /** Suggested filename when the browser honors the download attribute. */
 export const RESUME_DOWNLOAD_NAME = "Reginald-Jean-Amedee-Resume.pdf";

@@ -32,7 +32,7 @@ export function RecordScreen() {
 
       <SiteCtaFooter
         title="Want this as one page?"
-        body="The PDF is in the top-right on every page. Same data, printer-friendly."
+        body="Download my résumé as a PDF at the top right corner of every page."
       />
     </main>
   );

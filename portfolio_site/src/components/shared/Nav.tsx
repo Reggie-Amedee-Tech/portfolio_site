@@ -68,7 +68,7 @@ export function Nav() {
         <div className="flex items-center gap-2 sm:gap-4 shrink-0 ml-auto md:ml-0">
           <span className="hidden lg:flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest text-primary">
             <span className="w-1.5 h-1.5 rounded-full bg-primary inline-block" />
-            Available Now — Full-Time
+            Available Now — Full-Time - Software Engineer, Data Engineer
           </span>
           <a
             href={RESUME_HREF}
@@ -135,7 +135,7 @@ export function Nav() {
             })}
             <P className="pt-3 flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest text-primary">
               <span className="w-1.5 h-1.5 rounded-full bg-primary inline-block" />
-              Available Now — Full-Time
+              Available Now — Full-Time - Software Engineer, Data Engineer
             </P>
           </nav>
         </div>
