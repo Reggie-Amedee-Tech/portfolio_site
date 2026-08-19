@@ -1,6 +1,6 @@
 export const AT_A_GLANCE = [
   { label: "Based", value: "New York City" },
-  { label: "Seeking", value: "Full-time · available now" },
+  { label: "Seeking", value: "Full-Time · Software Engineer, Data Engineer" },
   { label: "Depth", value: "TypeScript · Python" },
   { label: "Now", value: "718 Digital Labs" },
   {
